@@ -1,11 +1,11 @@
 [uBlock Origin]
 ! Title: JPCERTCC/Lucky-Visitor-Scam-IoC URL filter
-! Update: 2023-02-09T13:37:54.987Z
+! Update: 2023-02-18T08:35:14.348Z
 ! Description: lucky visitor scams from JPCERTCC(Japan Computer Emergency Response Team Coordination Center)
 ! Expires: 4 days
 ! Homepage: https://github.com/JPCERTCC/Lucky-Visitor-Scam-IoC
 ! License: unknown
-! Homepage: https://github.com/PRiMENON/
+! Homepage: https://github.com/PRiMENON/Lucky-Visitor-Scam-IoC
 ! License: MIT
 ! Readme: This list is NOT maintained by JPCERTCC. Please do not contact JPECERT with any inquiries regarding this list.
 
@@ -1148,5 +1148,41 @@ aharanktrip.live
 axewardrank.live
 patdebtmere.live
 risestophost.live
+bissolcome.live
+bombtageve.live
 drugdownkeep.live
 ledeachbest.live
+earnfirmmop.live
+huntdutyass.live
+iggsabna.live
+sendroebow.live
+gagreadroe.live
+harmwellhat.live
+istunedoor.live
+palmtexthog.live
+psialtill.live
+evenknewsup.live
+lotstayby.live
+someshyfar.live
+talkhubfax.live
+betnetgave.live
+mindthinthy.live
+sizepigwed.live
+tanpiebulk.live
+anlaidpair.live
+linemoneve.live
+plugsliptie.live
+saltlearag.live
+findsongnick.live
+flymomcalm.live
+newswoodjean.live
+taawesod.live
+dabompup.live
+genewoodply.live
+itsiontest.live
+workhothalf.live
+ninepassrest.live
+parsoonpat.live
+rocklothere.live
+tommeetduty.live
+pinrowmill.live
