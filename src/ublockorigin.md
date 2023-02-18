@@ -1,11 +1,8 @@
 [uBlock Origin]
-! Title: JPCERTCC/Lucky-Visitor-Scam-IoC URL filter
-! Update: {UPDATE}
-! Description: lucky visitor scams from JPCERTCC(Japan Computer Emergency Response Team Coordination Center)
+! Title: JPCERTCC/Lucky-Visitor-Scam-IoC filter
+! Description: lucky visitor scam uBlock Origin filter
 ! Expires: 4 days
-! Homepage: https://github.com/JPCERTCC/Lucky-Visitor-Scam-IoC
-! License: unknown
+! Last modified: {UPDATE}
 ! Homepage: https://github.com/PRiMENON/Lucky-Visitor-Scam-IoC
-! License: MIT
-! Readme: This list is NOT maintained by JPCERTCC. Please do not contact JPECERT with any inquiries regarding this list.
+! License: https://github.com/PRiMENON/Lucky-Visitor-Scam-IoC/LICENSE
 
