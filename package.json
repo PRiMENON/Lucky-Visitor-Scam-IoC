@@ -1,0 +1,23 @@
+{
+  "name": "lucky-visitor-scam-ioc",
+  "version": "1.0.0",
+  "description": "This repository automatically collects and lists the redirected domains for lucky visitor scams.",
+  "main": "index.js",
+  "scripts": {
+    "make list": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PRiMENON/Lucky-Visitor-Scam-IoC.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PRiMENON/Lucky-Visitor-Scam-IoC/issues"
+  },
+  "homepage": "https://github.com/PRiMENON/Lucky-Visitor-Scam-IoC#readme",
+  "dependencies": {
+    "glob": "^8.1.0"
+  }
+}
