@@ -3,7 +3,7 @@ run-name: Make filter
 on:
     push:
         branches:
-            - master
+            - main
         paths:
             - "index.js"
             - "src/ublockorigin.md"
