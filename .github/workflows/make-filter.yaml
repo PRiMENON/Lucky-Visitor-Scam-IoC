@@ -1,0 +1,42 @@
+name: Make filter
+run-name: Make filter
+on:
+    push:
+        branches:
+            - master
+        paths:
+            - "index.js"
+            - "src/ublockorigin.md"
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Cancel Previous Runs
+              uses: styfle/cancel-workflow-action@0.11.0
+              with:
+                  access_token: ${{ github.token }}
+            - name: checkout repository
+              uses: actions/checkout@v3
+              with:
+                  fetch-depth: 0
+            - name: setup node
+              uses: actions/setup-node@v3
+              with:
+                  node-version: "16"
+            - name: npm install
+              run: |
+                  npm install --omit=dev
+            - name: Run script
+              run: |
+                  npm run list
+            - name: Commit files
+              run: |
+                  git config --local user.email "github-actions[bot]@users.noreply.github.com"
+                  git config --local user.name "github-actions[bot]"
+                  git add .
+                  git commit -a -m "Update filter on github-actions[bot]"
+            - name: Push changes
+              uses: ad-m/github-push-action@master
+              with:
+                  branch: ${{ github.head_ref }}
+                  github_token: ${{ secrets.GITHUB_TOKEN }}

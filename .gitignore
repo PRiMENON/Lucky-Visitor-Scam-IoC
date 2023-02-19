@@ -6,6 +6,7 @@
 # PRiMENON setting
 node_modules
 !src/*
+!.github/**
 !index.js
 !package.json
 !package-lock.json
