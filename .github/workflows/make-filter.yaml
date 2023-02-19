@@ -5,6 +5,9 @@ on:
         branches:
             - main
         paths:
+            - "2021/**"
+            - "2022/**"
+            - "2023/**"
             - "index.js"
             - "src/ublockorigin.md"
 jobs:
