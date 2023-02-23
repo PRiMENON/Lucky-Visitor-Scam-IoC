@@ -18,7 +18,7 @@ async function main() {
         const date = new Date()
         let dateISO = date.toISOString()
         basefile = basefile.replace('{UPDATE}', dateISO)
-        await fs.appendFileSync(ResultFile, basefile, { flag: 'w'}, function (err) {
+        await fs.appendFileSync(ResultFile, basefile, { flag: 'w' }, function (err) {
             if (err) throw err
         })
 
@@ -35,7 +35,7 @@ async function main() {
 
         // read temporary file, make filter file.
         let lists = await fs.readFileSync(tmpFile, 'utf-8', { flag: 'r' }).toString().split('\r\n')
-        lists = await lists.filter((element, index) => lists.indexOf(element) === index)
+        lists = await Array.from(new Set(lists));
         await fs.appendFileSync(ResultFile, lists.join('\n'), { flag: 'a+' }, err => {
             if (err) throw err
         })
