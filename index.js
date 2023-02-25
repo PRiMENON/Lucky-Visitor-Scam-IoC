@@ -9,7 +9,7 @@ function remove_File(path) {
     }
 }
 
-function filter(array) {
+async function filter(array) {
     const filtered = Array.from(new Set(array));
     return filtered;
 }
@@ -17,13 +17,13 @@ function filter(array) {
 async function main() {
     try {
         // make base file.
-        let basefile = await fs.readFileSync('./src/ublockorigin.md', 'utf-8')
+        let basefile = fs.readFileSync('./src/ublockorigin.md', 'utf-8')
 
         // get current time.
         const date = new Date()
         let dateISO = date.toISOString()
         basefile = basefile.replace('{UPDATE}', dateISO)
-        await fs.appendFileSync(ResultFile, basefile, { flag: 'w' }, function (err) {
+        fs.appendFileSync(ResultFile, basefile, { flag: 'w' }, function (err) {
             if (err) throw err
         })
 
@@ -32,17 +32,17 @@ async function main() {
 
         // create temporary file.
         for (const path of paths) {
-            let list = await fs.readFileSync(path, 'utf-8', { flag: 'r' })
-            await fs.appendFileSync(tmpFile, list, { flag: 'a+' }, function (err) {
+            let list = fs.readFileSync(path, 'utf-8', { flag: 'r' })
+            fs.appendFileSync(tmpFile, list, { flag: 'a+' }, function (err) {
                 if (err) throw err
             })
         }
 
         // read temporary file, make filter file.
-        let tmp = await fs.readFileSync(tmpFile, 'utf-8', { flag: 'r' }).toString().split('\r\n')
+        let tmp = fs.readFileSync(tmpFile, 'utf-8', { flag: 'r' }).toString().split('\r\n')
 
         const lists = await filter(tmp);
-        await fs.appendFileSync(ResultFile, lists.join('\n'), { flag: 'a+' }, err => {
+        fs.appendFileSync(ResultFile, lists.join('\n'), { flag: 'a+' }, err => {
             if (err) throw err
         })
     } catch (err) {
