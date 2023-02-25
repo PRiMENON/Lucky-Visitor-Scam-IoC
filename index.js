@@ -9,6 +9,11 @@ function remove_File(path) {
     }
 }
 
+function filter(array) {
+    const filtered = Array.from(new Set(array));
+    return filtered;
+}
+
 async function main() {
     try {
         // make base file.
@@ -34,8 +39,9 @@ async function main() {
         }
 
         // read temporary file, make filter file.
-        let lists = await fs.readFileSync(tmpFile, 'utf-8', { flag: 'r' }).toString().split('\r\n')
-        lists = await Array.from(new Set(lists));
+        let tmp = await fs.readFileSync(tmpFile, 'utf-8', { flag: 'r' }).toString().split('\r\n')
+
+        const lists = await filter(tmp);
         await fs.appendFileSync(ResultFile, lists.join('\n'), { flag: 'a+' }, err => {
             if (err) throw err
         })
