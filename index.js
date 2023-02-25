@@ -9,8 +9,9 @@ function remove_File(path) {
     }
 }
 
-async function filter(array) {
-    const filtered = Array.from(new Set(array));
+async function filter(file) {
+    let ary = fs.readFileSync(file, 'utf-8', { flag: 'r' }).toString().split('\r\n')
+    let filtered = Array.from(new Set(ary));
     return filtered;
 }
 
@@ -38,10 +39,9 @@ async function main() {
             })
         }
 
-        // read temporary file, make filter file.
-        let tmp = fs.readFileSync(tmpFile, 'utf-8', { flag: 'r' }).toString().split('\r\n')
+        // async
+        let lists = await filter(tmpFile);
 
-        const lists = await filter(tmp);
         fs.appendFileSync(ResultFile, lists.join('\n'), { flag: 'a+' }, err => {
             if (err) throw err
         })
