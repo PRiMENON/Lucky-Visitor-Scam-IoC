@@ -10,8 +10,8 @@ function remove_File(path) {
 }
 
 async function filter(file) {
-    let ary = fs.readFileSync(file, 'utf-8', { flag: 'r' }).toString().split('\r\n')
-    let filtered = Array.from(new Set(ary));
+    let ary = await fs.readFileSync(file, 'utf-8', { flag: 'r' }).toString().split('\r\n')
+    let filtered = await Array.from(new Set(ary));
     return filtered;
 }
 
