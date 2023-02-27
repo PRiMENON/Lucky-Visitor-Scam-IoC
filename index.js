@@ -1,6 +1,5 @@
 const glob = require('glob')
 const fs = require('fs')
-const tmpFile = 'tmp.txt'
 const ResultFile = 'lucky-visitor.txt'
 
 function remove_File(path) {
@@ -9,18 +8,13 @@ function remove_File(path) {
     }
 }
 
-async function filter(file) {
-    let ary = await fs.readFileSync(file, 'utf-8', { flag: 'r' }).toString().split('\r\n')
-    let filtered = await Array.from(new Set(ary));
-    return filtered;
-}
-
 async function main() {
     try {
-        // make base file.
+        // init file.
+        remove_File(ResultFile);
         let basefile = fs.readFileSync('./src/ublockorigin.md', 'utf-8')
 
-        // get current time.
+        // get time.
         const date = new Date()
         let dateISO = date.toISOString()
         basefile = basefile.replace('{UPDATE}', dateISO)
@@ -31,24 +25,25 @@ async function main() {
         // get ioc.txt paths.
         const paths = glob.sync('**/ioc.txt')
 
-        // create temporary file.
+        // read files and set array.
+        let list = []
         for (const path of paths) {
-            let list = fs.readFileSync(path, 'utf-8', { flag: 'r' })
-            fs.appendFileSync(tmpFile, list, { flag: 'a+' }, function (err) {
+            let array = fs.readFileSync(path, 'utf-8', { flag: 'r' }).toString().split('\r\n')
+            array = array.filter(Boolean)
+            list.push.apply(list, array);
+        }
+        // remove duplicate urls.
+        list = new Set(list);
+
+        // create list.
+        for (const line of list) {
+            fs.appendFileSync(ResultFile, line + '\n', { flag: 'a' }, err => {
                 if (err) throw err
             })
         }
-
-        // async
-        let lists = await filter(tmpFile);
-
-        fs.appendFileSync(ResultFile, lists.join('\n'), { flag: 'a+' }, err => {
-            if (err) throw err
-        })
     } catch (err) {
         console.error(err.message)
     } finally {
-        remove_File(tmpFile)
         console.log('script completed.')
     }
 }
