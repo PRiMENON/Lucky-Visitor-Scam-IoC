@@ -28,7 +28,7 @@ async function main() {
         // read files and set array.
         let list = []
         for (const path of paths) {
-            let array = fs.readFileSync(path, 'utf-8', { flag: 'r' }).toString().split('\r\n')
+            let array = fs.readFileSync(path, 'utf-8', { flag: 'r' }).toString().split('\n')
             array = array.filter(Boolean)
             list.push.apply(list, array);
         }
