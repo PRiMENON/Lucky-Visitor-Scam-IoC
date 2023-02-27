@@ -15,3 +15,4 @@ node_modules
 !README.*
 !.editorconfig
 !.eslintrc.json
+!.prettierrc
