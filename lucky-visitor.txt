@@ -2,7 +2,7 @@
 ! Title: JPCERTCC/Lucky-Visitor-Scam-IoC filter
 ! Description: lucky visitor scam uBlock Origin filter
 ! Expires: 4 days
-! Last modified: 2023-03-03T23:34:32.891Z
+! Last modified: 2023-03-04T00:30:24.043Z
 ! Homepage: https://github.com/PRiMENON/Lucky-Visitor-Scam-IoC
 ! License: https://github.com/PRiMENON/Lucky-Visitor-Scam-IoC/blob/main/LICENSE
 
@@ -1239,3 +1239,4 @@ spyearnjust.live
 atsupfish.live
 bagformeft.live
 repparktoy.live
+staywighuh.live
