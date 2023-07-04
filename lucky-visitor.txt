@@ -2,7 +2,7 @@
 ! Title: JPCERTCC/Lucky-Visitor-Scam-IoC filter
 ! Description: lucky visitor scam uBlock Origin filter
 ! Expires: 4 days
-! Last modified: 2023-06-16T22:50:46.618Z
+! Last modified: 2023-07-04T13:33:47.899Z
 ! Homepage: https://github.com/PRiMENON/Lucky-Visitor-Scam-IoC
 ! License: https://github.com/PRiMENON/Lucky-Visitor-Scam-IoC/blob/main/LICENSE
 
@@ -1664,6 +1664,79 @@ edsenreg.live
 enrestdub.live
 gotfadays.live
 sapjurymove.live
+feelneckjack.live
 idplotcar.live
 keenwentfate.live
 misstinyled.live
+dietpopid.live
+songreares.live
+soytapdark.live
+talefaticy.live
+cosdustde.live
+fatespotwise.live
+fayoohleft.live
+hisbeendip.live
+sendkingbio.live
+soulpobest.live
+tarnilpam.live
+weaksendlogo.live
+afttalelap.live
+cobsortdis.live
+inchmilever.live
+twocasedesk.live
+galgempub.live
+icewindie.live
+piacedab.live
+tadotext.live
+dafarmjane.live
+hoglogion.live
+hugdoctime.live
+jackdunseat.live
+armyawaystay.live
+bizjoblay.live
+dieyetweb.live
+towvatcry.live
+agehhire.live
+ahaseemill.live
+anymenin.live
+girlsisroe.live
+burnhonup.live
+losemummo.live
+penhamweek.live
+showjoinnip.live
+flatrentsaw.live
+gavemadable.live
+orbpoorsoft.live
+pastchattoe.live
+drawknowwhen.live
+netbuspalm.live
+piplinkever.live
+wetpeakdew.live
+biodokick.live
+fivekeptkent.live
+holyesdark.live
+wildnunmug.live
+hillcooawe.live
+landwishma.live
+markenmass.live
+oreradand.live
+bizicyass.live
+bugdutyhate.live
+copeforkeen.live
+linewarate.live
+mepoornose.live
+dadahasafe.live
+dadcotbee.live
+ladycamefear.live
+markyeboss.live
+cumhellbaa.live
+mixmildam.live
+painpoolbath.live
+sortrichsim.live
+lidsumtry.live
+takedidbit.live
+tooktoyan.live
+warmhallvan.live
+whofirbiz.live
+ramourasp.live
+rangoodrose.live
