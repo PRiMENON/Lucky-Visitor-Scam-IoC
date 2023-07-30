@@ -1,11 +1,3 @@
-[uBlock Origin]
-! Title: JPCERTCC/Lucky-Visitor-Scam-IoC filter
-! Description: lucky visitor scam uBlock Origin filter
-! Expires: 4 days
-! Last modified: 2023-07-27T12:02:56.618Z
-! Homepage: https://github.com/PRiMENON/Lucky-Visitor-Scam-IoC
-! License: https://github.com/PRiMENON/Lucky-Visitor-Scam-IoC/blob/main/LICENSE
-
 62.76.40.216
 elementonfor.live
 timecatchsmile.live
@@ -1831,4 +1823,15 @@ jackhandar.live
 meatsectour.live
 oiwireabs.live
 tapehadfen.live
+andstopwine.live
 hungpainwow.live
+molhuegal.live
+theycoldlid.live
+gonekazip.live
+huhaimnan.live
+jawodddark.live
+fargosub.live
+helpoutet.live
+joenebmany.live
+seatdoeside.live
+batpepeft.live
