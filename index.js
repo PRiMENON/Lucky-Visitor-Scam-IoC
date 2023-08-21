@@ -2,16 +2,12 @@ const glob = require('glob')
 const fs = require('fs')
 const ResultFile = 'lucky-visitor.txt'
 
-function remove_File(path) {
-    if (fs.existsSync(path)) {
-        fs.unlink(path, err => { if (err) throw err })
-    }
-}
-
 async function main() {
     try {
         // init file.
-        remove_File(ResultFile);
+        if (fs.existsSync(ResultFile)){
+            fs.unlinkSync(ResultFile, err => { if (err) throw err })
+        }
         let basefile = fs.readFileSync('./src/ublockorigin.md', 'utf-8')
 
         // get time.
